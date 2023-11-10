@@ -1,0 +1,56 @@
+div.ModalContainer {
+  background-color: var(--color4);
+  padding: 1.25rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  position: fixed;
+  z-index: 999;
+  width: 80%;
+  height: 200px;
+  left: calc(10% - 1.25rem);
+  top: calc(30%);
+  background-color: var(--color3);
+}
+
+div.ModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+div.modalTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+div.modalContent {
+  margin-top: 1rem;
+}
+
+div.modalContent > textarea {
+  width: calc(100% - 2rem);
+  height: 4.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--color4);
+  box-shadow: none;
+}
+
+div.btnBox {
+  display: flex;
+  margin-top: auto;
+  justify-content: flex-end;
+}
+
+button.btn {
+  width: 6rem;
+  height: 2.5rem;
+  margin: 0;
+  background-color: var(--color4);
+}
+
+button.btn:nth-child(1) {
+  margin-right: 1rem;
+}

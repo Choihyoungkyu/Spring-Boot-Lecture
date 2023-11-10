@@ -1,0 +1,77 @@
+section.header {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+}
+
+div.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+div.header > button {
+  background-color: var(--color3);
+  margin-left: auto;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+section.todo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+ul.todoList {
+  padding-inline: 1rem;
+  width: calc(100% - 2rem);
+  margin: 0;
+}
+
+ul.todoList > li {
+  margin-top: 1rem;
+  background-color: var(--color3);
+  padding: 1rem 1.25rem;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+
+ul.todoList > li > div.idx {
+  font-weight: 600;
+}
+
+ul.todoList > li > div.idx::after {
+  content: "|";
+  font-weight: 400;
+  margin-inline: 1rem;
+}
+
+ul.todoList > li :last-child {
+  margin-left: auto;
+}
+
+.subBox {
+  display: flex;
+  align-items: center;
+}
+
+.subBox > button {
+  box-shadow: none;
+}
+
+section.completed {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+section.completed > ul > li {
+  background-color: gray;
+}

@@ -1,0 +1,13 @@
+ul.nav {
+  display: flex;
+  margin: 0;
+  padding: 1rem;
+}
+
+ul.nav > li {
+  margin-right: 1rem;
+}
+
+ul.nav > li:hover {
+  color: var(--color2);
+}

@@ -1,10 +1,17 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import TodoApp from './components/todo/TodoApp';
+import Router from './router/Router';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <TodoApp />
+      <BrowserRouter>
+        <Layout />
+        <Routes>
+          <Route path="*" element={<Router />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
